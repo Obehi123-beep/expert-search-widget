@@ -2,7 +2,7 @@
 
 A lightweight, high-performance typeahead and autocomplete search component built with **React** and **Vite**, tailored for real estate discovery. 
 
-🔗 **Live Demo:** [https://expert-search-widget.vercel.app](https://expert-search-widget.vercel.app) *(Replace with your exact Vercel link if different)*
+🔗 **Live Demo:** [https://expert-search-widget.vercel.app](https://expert-search-widget.vercel.app)
 
 ## 🚀 Features
 - **Instant Filtering**: Real-time search filtering across Lagos property listings (locations, property types, and titles).
