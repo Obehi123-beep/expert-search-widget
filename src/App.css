@@ -1,0 +1,182 @@
+/* Reset and portal background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+/* Main portal container card */
+.search-container {
+  max-width: 650px;
+  margin: 90px auto;
+  padding: 45px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px -5px rgba(15, 23, 42, 0.08), 0 8px 12px -6px rgba(15, 23, 42, 0.04);
+  border: 1px solid #e2e8f0;
+}
+
+/* Input box wrapper */
+.search-input-box {
+  position: relative;
+  width: 100%;
+}
+
+/* Search Icon alignment */
+.search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* Main search text input */
+.search-input {
+  width: 100%;
+  padding: 15px 16px 15px 50px;
+  font-size: 15px;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f8fafc;
+  color: #0f172a;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  border-color: #0d9488;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.12);
+}
+
+/* Dropdown results box */
+.dropdown-results {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px -4px rgba(15, 23, 42, 0.12);
+  max-height: 340px;
+  overflow-y: auto;
+  z-index: 50;
+}
+
+/* Individual result card */
+.result-item {
+  padding: 14px 18px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.15s ease;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item:hover {
+  background-color: #f0fdf4;
+}
+
+/* Header inside result row */
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.result-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #0f172a;
+}
+
+/* Property type badge */
+.result-badge {
+  font-size: 11px;
+  font-weight: 600;
+  background: #ccfbf1;
+  color: #0f766e;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  letter-spacing: 0.3px;
+}
+
+/* Footer inside result row (Location & Price) */
+.result-footer {
+  font-size: 13px;
+  color: #475569;
+  display: flex;
+  align-items: center;
+}
+
+.result-price {
+  font-weight: 700;
+  color: #047857;
+}
+
+/* Loading & Empty States */
+.loading-state, .empty-state {
+  padding: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #cbd5e1;
+  border-top-color: #0d9488;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Portal Title Styling */
+.portal-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f766e; /* Rich portal teal */
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
+/* Portal Subtitle Styling */
+.portal-subtitle {
+  font-size: 14px;
+  color: #475569; /* Soft professional slate */
+  margin-bottom: 24px;
+}
+
+/* Portal Title Styling (h1) */
+.search-container h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f766e; /* Rich portal teal */
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
+/* Portal Subtitle Styling (p) */
+.search-container p {
+  font-size: 14px;
+  color: #047857; /* Deep emerald green to match the theme */
+  margin-bottom: 24px;
+  font-weight: 500;
+}
